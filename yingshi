@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>位昌影视发布页</title>
+    <style>
+        body {
+            background-image: url('https://free-img.400040.xyz/4/2026/02/08/69888de882e23.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中（已修正） */
+            font-family: 'Microsoft YaHei', sans-serif;
+            flex-direction: column;
+            padding: 20px; /* 统一内边距，防止边缘溢出 */
+            box-sizing: border-box;
+            position: relative; /* 为统计栏定位提供参考 */
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 80%;
+            max-width: 500px;
+            z-index: 1;
+        }
+        .nav-button {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border-left: 5px solid #4CAF50;
+        }
+        .nav-button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateX(10px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .nav-button img {
+            width: 32px;
+            height: 32px;
+            margin-right: 15px;
+            border-radius: 50%;
+            background-color: white;
+            padding: 5px;
+        }
+        .stats-info {
+            position: fixed; /* 固定在底部 */
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <!-- 位昌影视（横屏版） -->
+        <a href="https://api.pearktrue.cn/api/lanzou/api.php?url=https%3A%2F%2Fwwbbe.lanzoub.com%2FiqcBq3h14ppg&type=down" target="_blank" class="nav-button">
+            <img src="https://free-img.400040.xyz/4/2026/02/08/698890bcc459d.png" alt="图标">
+            位昌影视（横屏版）
+        </a>
+        <!-- 位昌音乐网 -->
+        <a href="http://tian.hppro1.hpnu.cn/" target="_blank" class="nav-button">
+            <img src="https://t7.baidu.com/it/u=990040150,4093801533&fm=193" alt="图标">
+            位昌音乐网
+        </a>
+        <!-- 随机小姐姐1 -->
+        <a href="http://gacll.hppro1.hpnu.cn/" target="_blank" class="nav-button">
+            <img src="https://free-img.400040.xyz/4/2026/02/08/69889d91a2cf2.webp" alt="图标">
+            随机小姐姐1
+        </a>
+        <!-- 随机小姐姐2 -->
+        <a href="https://tlg.555436.xyz/" target="_blank" class="nav-button">
+            <img src="https://free-img.400040.xyz/4/2026/02/08/69889d91a2cf2.webp" alt="图标">
+            随机小姐姐2
+        </a>
+        <!-- 彩票中奖查询 -->
+        <a href="https://m.55125.cn/kaijiang/" target="_blank" class="nav-button">
+            <img src="https://p8.itc.cn/images01/20230418/153c672f7c69480dadae9d9b9458b704.jpeg" alt="图标">
+            彩票中奖查询
+        </a>
+        <!-- 放屁音乐APP -->
+        <a href="https://api.pearktrue.cn/api/lanzou/api.php?url=https%3A%2F%2Fwwbbe.lanzoub.com%2Fit32G3h1oz8j&type=down" target="_blank" class="nav-button">
+            <img src="https://free-img.400040.xyz/4/2026/02/08/69889da665378.png" alt="图标">
+            放屁音乐APP
+        </a>
+        <!-- 作者QQ群 -->
+        <button onclick="copyText('作者QQ群:345595008')" class="nav-button" style="cursor: pointer; border: none; background: none; padding: 0; text-align: left;">
+            <img src="https://pic.rmb.bdstatic.com/bjh/fce973a1dd7fa63cf73382a187a2cf974046.jpeg@h_1280" alt="图标">
+            作者QQ群:345595008
+        </button>
+        <!-- 更多功能 -->
+        <button onclick="copyText('更多功能待添加……')" class="nav-button" style="cursor: pointer; border: none; background: none; padding: 0; text-align: left;">
+            <img src="https://pic.rmb.bdstatic.com/bjh/events/1dd1d60a011f048b86f660dafac3b4c0.jpeg@h_1280" alt="图标">
+            更多功能待添加……
+        </button>
+    </div>
+
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="stats-info">
+    <span id="busuanzi_container_site_pv">
+        总访问量 <span id="busuanzi_value_site_pv"></span> 次
+    </span>
+    <span style="margin: 0 10px;">|</span>
+    <span id="busuanzi_container_site_uv">
+        访客数 <span id="busuanzi_value_site_uv"></span> 人
+    </span>
+</div>
+<script>
+    function copyText(text) {
+        navigator.clipboard.writeText(text).then(function() {
+            alert('已复制: ' + text);
+        }, function(err) {
+            console.error('复制失败: ', err);
+        });
+    }
+</script>
+</body>
+</html>
